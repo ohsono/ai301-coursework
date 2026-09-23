@@ -1,0 +1,12 @@
+# Claude file
+CLAUDE.md
+
+# Agents file
+Agents.md
+
+# Class scoring Rublic
+Rubrics.md
+
+# exclude claude default tools and mcp
+/data/
+/logs/
