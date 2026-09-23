@@ -141,7 +141,7 @@ a fix. It is the item I would watch first if a later run drops below the bar.
 
 > | `not-claimed` | Repo facts line "this issue: assignees: ...; linked PRs: ..." plus every PR link or claim comment in the Comments section. Live: the Assignees and Development sidebar boxes and the thread | All four hold: (a) assignees is none; (b) no linked or thread-mentioned PR is `open`, including PRs from forks (`someone/repo#N`); (c) no human claim comment ("I'll take this", "working on this", "@zulipbot claim", "can I work on this") dated within 90 days of the capture date; (d) no maintainer comment reserving the issue for a named person or PR. Closed or merged PRs and claims older than 90 days with no open PR are stale and do not block | required |
 
-> **R6. Truncated or empty threads.** "(N total, first M shown)" with M < N means later comments are hidden. Grade only what is shown, and never assume what the hidden comments say. Because the hidden comments are the newest ones, `not-claimed` cannot pass on silence when M < N: grade it `unclear` unless a shown fact already fails it. "(no comments)" and "0 total" are evidence of no claim, not missing evidence.
+> **R6. Truncated or empty threads.** "(N total, first M shown)" with M < N means later comments are hidden. Grade only what is shown, and never assume what the hidden comments say. Because the hidden comments are the newest ones, `not-claimed` cannot pass on silence when M < N: grade it `unclear` unless a shown fact already fails it. "(no comments)" and "0 total" are evidence of no claim, not missing evidence. An empty `description:` line is not evidence of anything.
 
 Why this form:
 - A good-first-issue label is not a claim that the issue is free, so the check reads all three
